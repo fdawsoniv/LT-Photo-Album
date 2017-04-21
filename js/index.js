@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#getAlbum").on("click", function(){
-      var input = Math.trunc(document.querySelector('#album').value);
+      var input = Number(document.querySelector('#album').value);
       if (!Number.isInteger(input) || input < 1 || input > 100) {
         $("#albumResult").html("Please enter a number from 1-100");
         return;
